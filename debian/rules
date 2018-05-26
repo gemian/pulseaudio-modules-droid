@@ -17,7 +17,7 @@ override_dh_autoreconf:
 
 override_dh_auto_clean:
 	if [ -f .tarball-version ]; then rm .tarball-version; fi
-	dh_autoreconf_clean
+	dh_auto_clean
 
 override_dh_shlibdeps:
 	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info -l/usr/lib/${DEB_HOST_MULTIARCH}/pulseaudio:/usr/lib/pulse-$(PULSEAUDIO_VERSION)/modules
