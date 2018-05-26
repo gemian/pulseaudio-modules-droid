@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pulseaudio-modules-droid
+Source: https://github.com/mer-hybris/pulseaudio-modules-droid
+
+Files: src/*
+Copyright: 2013, 2017, Jolla Ltd.
+License: LGPL-2.1
+
+Files: debian/*
+Copyright: 2017, 2018, Marius Gripsgard
+	   2018 Jonah Brüchert
