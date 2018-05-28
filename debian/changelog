@@ -1,8 +1,8 @@
-pulseaudio-modules-droid (11.1.67-1) UNRELEASED; urgency=medium
+pulseaudio-modules-droid (11.1.67-2) UNRELEASED; urgency=medium
 
   * New upstream release
   * Move to mer-hybris upstream
-  * Split packaging from source 
+  * Split packaging from source
 
  -- Jonah Brüchert <jbb@kaidan.im>  Sat, 26 May 2018 20:06:24 +0200
 
