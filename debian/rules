@@ -7,7 +7,7 @@ include /usr/share/dpkg/default.mk
 	dh $@ --with=autoreconf --parallel
 
 override_dh_auto_configure:
-	dh_auto_configure -- --disable-static
+	dh_auto_configure -- --disable-static --libdir /usr/lib
 
 override_dh_autoreconf:
 	echo ${DEB_VERSION_UPSTREAM} > .tarball-version
