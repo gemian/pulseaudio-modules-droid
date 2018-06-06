@@ -1,4 +1,10 @@
-pulseaudio-modules-droid (11.1.67-2) UNRELEASED; urgency=medium
+pulseaudio-modules-droid (11.1.68-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Jonah Brüchert <jbb.mail@gmx.de>  Wed, 06 Jun 2018 14:03:22 +0200
+
+pulseaudio-modules-droid (11.1.67-1) unstable; urgency=medium
 
   * New upstream release
   * Move to mer-hybris upstream
