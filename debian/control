@@ -4,7 +4,6 @@ Priority: optional
 Build-Depends: android-headers (>= 23),
                check,
                debhelper (>= 11),
-               dh-autoreconf,
                dh-exec,
                intltool,
                libdbus-1-dev,

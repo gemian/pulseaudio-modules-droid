@@ -4,7 +4,7 @@
 include /usr/share/dpkg/default.mk
 
 %:
-	dh $@ --with=autoreconf --parallel
+	dh $@ --with=autoreconf
 
 override_dh_auto_configure:
 	$(overridden_command) -- --disable-static --libdir /usr/lib
