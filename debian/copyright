@@ -2,12 +2,35 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: pulseaudio-modules-droid
 Source: https://github.com/mer-hybris/pulseaudio-modules-droid
 
+Files: *
+Copyright: 1991, 1999, Free Software Foundation, Inc.
+License: UNKNOWN
+ Please fill license UNKNOWN from header of *
+
 Files: debian/*
 Copyright: 2018, Jonah Brüchert
   2017, 2018, Marius Gripsgard
 License: LGPL-2.1
 
+Files: m4/*
+Copyright: 2006, 2007, xine project
+  2006, 2007, Diego Pettenò <flameeyes@gmail.com>
+License: GPL-2+
+
 Files: src/*
+Copyright: 2013-2018, Jolla Ltd.
+License: LGPL-2.1
+
+Files: src/Makefile.am
+Copyright: 2013, 2017, Jolla Ltd.
+License: LGPL-2.1
+
+Files: src/common/Makefile.am
+  src/common/libdroid-util.pc.in
+Copyright: 2013, 2017, Jolla Ltd.
+License: LGPL-2.1
+
+Files: src/droid/Makefile.am
 Copyright: 2013, 2017, Jolla Ltd.
 License: LGPL-2.1
 
