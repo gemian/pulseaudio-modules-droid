@@ -7,21 +7,21 @@ include /usr/share/dpkg/default.mk
 	dh $@ --with=autoreconf
 
 override_dh_auto_configure:
-	$(overridden_command) -- --disable-static --libdir /usr/lib
+	dh_auto_configure -- --disable-static --libdir /usr/lib
 
 override_dh_autoreconf:
 	echo ${DEB_VERSION_UPSTREAM} > .tarball-version
-	$(overridden_command)
+	dh_autoreconf
 
 override_dh_auto_clean:
 	if [ -f .tarball-version ]; then rm .tarball-version; fi
-	$(overridden_command)
+	dh_auto_clean
 
 override_dh_shlibdeps:
-	$(overridden_command) --dpkg-shlibdeps-params=--ignore-missing-info -l/usr/lib/${DEB_HOST_MULTIARCH}/pulseaudio:/usr/lib/pulse-*/modules
+	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info -l/usr/lib/${DEB_HOST_MULTIARCH}/pulseaudio:/usr/lib/pulse-*/modules
 
 override_dh_auto_install:
-	$(overridden_command)
+	dh_auto_install
 
 	rm debian/tmp/usr/lib/pulse-*/modules/*.la
 
