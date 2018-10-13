@@ -13,7 +13,7 @@ Build-Depends: android-headers (>= 23),
                libpulse-dev,
                pulseaudio-dev
 Maintainer: Marius Gripsgard <marius@ubports.com>
-Standards-Version: 4.1.4
+Standards-Version: 4.2.1
 Homepage: https://github.com/mer-hybris/pulseaudio-modules-droid
 Vcs-Git: https://gitlab.com/debian-pm/pulseaudio-modules-droid.git
 Vcs-Browser: https://gitlab.com/debian-pm/pulseaudio-modules-droid
