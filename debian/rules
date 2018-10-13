@@ -3,11 +3,13 @@
 
 include /usr/share/dpkg/default.mk
 
+PA_MODULE_DIR := $$(readlink -f /usr/lib/pulse-*/modules)
+
 %:
 	dh $@ --with=autoreconf
 
 override_dh_auto_configure:
-	dh_auto_configure -- --disable-static --libdir /usr/lib
+	dh_auto_configure -- --disable-static --with-module-dir=${PA_MODULE_DIR}
 
 override_dh_autoreconf:
 	echo ${DEB_VERSION_UPSTREAM} > .tarball-version
