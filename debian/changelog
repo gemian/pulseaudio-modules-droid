@@ -1,4 +1,10 @@
-pulseaudio-modules-droid (11.1.74-1) UNRELEASED; urgency=medium
+pulseaudio-modules-droid (11.1.75-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Jonah Brüchert <jbb@kaidan.im>  Tue, 13 Nov 2018 21:17:39 +0100
+
+pulseaudio-modules-droid (11.1.74-1) unstable; urgency=medium
 
   * New upstream release
 
