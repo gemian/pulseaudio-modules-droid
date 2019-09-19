@@ -12,7 +12,8 @@ Build-Depends: android-headers (>= 23),
                libltdl-dev,
                libpulse-dev,
                pulseaudio-dev,
-               libexpat1-dev
+               libexpat1-dev,
+               libudev-dev
 Maintainer: Marius Gripsgard <marius@ubports.com>
 Standards-Version: 4.3.0
 Homepage: https://github.com/mer-hybris/pulseaudio-modules-droid
