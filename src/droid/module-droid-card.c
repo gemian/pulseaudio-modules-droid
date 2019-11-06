@@ -64,6 +64,7 @@
 #include "droid-sink.h"
 #include "droid-source.h"
 #include "droid-extcon.h"
+#include "droid-extevdev.h"
 
 #include "module-droid-card-symdef.h"
 
@@ -164,6 +165,7 @@ struct userdata {
     pa_card_profile *real_profile;
 
     pa_droid_extcon *extcon;
+    pa_droid_extevdev *extevdev;
 
     pa_modargs *modargs;
     pa_card *card;
@@ -874,6 +876,11 @@ int pa__init(pa_module *m) {
     init_profile(u);
     u->extcon = pa_droid_extcon_new(m->core, u->card);
 
+    if (!u->extcon)
+        u->extevdev = pa_droid_extevdev_new(m->core, u->card);
+    else
+        u->extevdev = NULL;
+
     pa_card_put(u->card);
 
     return 0;
@@ -904,6 +911,9 @@ void pa__done(pa_module *m) {
 
         if (u->extcon)
             pa_droid_extcon_free(u->extcon);
+
+        if (u->extevdev)
+            pa_droid_extevdev_free(u->extevdev);
 
         if (u->card)
             pa_card_free(u->card);
