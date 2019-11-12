@@ -1,3 +1,9 @@
+pulseaudio-modules-droid (12.2.79-3) unstable; urgency=medium
+
+  * Fix pulseaudio droid module version
+
+ -- Jonah Brüchert <jbb@kaidan.im>  Tue, 12 Nov 2019 12:35:51 +0100
+
 pulseaudio-modules-droid (12.2.79-2) unstable; urgency=medium
 
   * Fix generating the pkgconfig files with proper pathes
