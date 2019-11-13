@@ -1,3 +1,9 @@
+pulseaudio-modules-droid (12.2.79+gemian) buster; urgency=medium
+
+  * Branch packaging for Gemian
+
+ -- TheKit <thekit@disroot.org>  Wed, 13 Nov 2019 13:39:31 +0100
+
 pulseaudio-modules-droid (12.2.79-3) unstable; urgency=medium
 
   * Fix pulseaudio droid module version

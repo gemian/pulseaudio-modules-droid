@@ -21,7 +21,7 @@ Vcs-Browser: https://gitlab.com/debian-pm/halium/pulseaudio-modules-droid
 Package: pulseaudio-module-droid
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: PulseAudio Droid HAL module. (JOLLA TEST VERSION)
+Description: PulseAudio Droid HAL module.
 
 Package: pulseaudio-module-droid-dev
 Architecture: any
