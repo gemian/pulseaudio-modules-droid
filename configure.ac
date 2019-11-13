@@ -20,8 +20,8 @@ AC_PROG_CC_C99
 AM_PROG_CC_C_O
 AC_PROG_GCC_TRADITIONAL
 
-m4_define(pa_major, `echo $VERSION | cut -d. -f1 | cut -d- -f1`)
-m4_define(pa_minor, `echo $VERSION | cut -d. -f2 | cut -d- -f1`)
+m4_define(pa_major, `pkg-config --modversion libpulse | cut -d. -f1 | cut -d- -f1`)
+m4_define(pa_minor, `pkg-config --modversion libpulse | cut -d. -f2 | cut -d- -f1`)
 m4_define(pa_module_version, `echo $VERSION | cut -d. -f3 | cut -d- -f1`)
 
 AC_SUBST(PA_MAJOR, pa_major)
