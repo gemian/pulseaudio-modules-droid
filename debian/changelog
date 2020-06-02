@@ -1,3 +1,9 @@
+pulseaudio-modules-droid (12.2.84+gemian) buster; urgency=medium
+
+  * New upstream release
+
+ -- TheKit <thekit@disroot.org>  Wed, 03 Jun 2020 01:55:10 +0100
+
 pulseaudio-modules-droid (12.2.79+gemian) buster; urgency=medium
 
   * Branch packaging for Gemian
